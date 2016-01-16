@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="titlebar_height">50dip</dimen>
+    <dimen name="divider_height">0.5dip</dimen>
+    <dimen name="webview_spacing">10dip</dimen>
+    <dimen name="menu_icon_width">50dip</dimen>
+    <dimen name="probressbar_margin">2dip</dimen>
+    <dimen name="probressbar_height">8dip</dimen>
+    <dimen name="probressbar_stroke_width">0.5dip</dimen>
+    <dimen name="probressbar_round">4dip</dimen>
+    <dimen name="view_left_right_margin">10dip</dimen>
+    <dimen name="vertical_divider_width">2dip</dimen>
+    <dimen name="vertical_divider_margin">10dip</dimen>
+    <dimen name="drawer_width">230dip</dimen>
+    <dimen name="drawer_padding">5dip</dimen>
+    <dimen name="dialog_width">300dip</dimen>
+    <dimen name="dialog_height">200dip</dimen>
+    <dimen name="splash_thumbnail_width_height">230dip</dimen>
+    <dimen name="splash_thumbnail_margin">60dip</dimen>
+    <dimen name="bottom_navigation_height">50dip</dimen>
+    <dimen name="setting_item_height">55dip</dimen>
+    <dimen name="color_view_width_height">25dip</dimen>
+    <dimen name="smart_drawer_text_size">14sp</dimen>
+    <dimen name="slider_item_height">50dip</dimen>
+    <dimen name="smart_drawer_item_height">150dip</dimen>
+    <dimen name="radio_width_height">25dip</dimen>
+    <dimen name="smart_drawer_margin">50dip</dimen>
+    <dimen name="progressbar_width_height">70dip</dimen>
+    <dimen name="progress_stoke_width">5dip</dimen>
+
+    <!-- Textsize dimens -->
+    <dimen name="titlebar_text_size">22sp</dimen>
+    <dimen name="slider_title_text_size">18sp</dimen>
+    <dimen name="splash_title_text_size">36sp</dimen>
+    <dimen name="settings_title_text_size">18sp</dimen>
+    <dimen name="toast_text_size">15sp</dimen>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titlebar_height" >
+
+        <RelativeLayout
+            android:id="@+id/back_view"
+            android:layout_width="@dimen/menu_icon_width"
+            android:layout_height="fill_parent"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <ImageView
+                android:id="@+id/back_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_arrow_left" />
+        </RelativeLayout>
+
+        <design.website.template.CustomDescriptionTextview
+            android:id="@+id/title"
+            style="@style/TitleTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/about" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_ads_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contents_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom_ads_view"
+        android:layout_below="@id/titlebar_layout" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <design.website.template.lib.CircleProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/progressbar_width_height"
+            android:layout_height="@dimen/progressbar_width_height"
+            android:layout_centerInParent="true"
+            app:mlpb_progress_stoke_width="@dimen/progress_stoke_width"
+            app:mlpb_progress_text_visibility="visible"
+            app:mlpb_show_arrow="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

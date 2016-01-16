@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#706f6e</color>
+    <color name="icons_selector_color">#AAFFFFFF</color>
+    <color name="list_bg_selected">#AAFFFFFF</color>
+    <color name="progress_filled_color">#ff8800</color>
+    <color name="progress_unfilled_color">#d8d3d3</color>
+    <color name="progress_border_color">#777777</color>
+
+    <!-- Material Design color -->
+
+    <color name="red">#bf360c</color>
+    <color name="ripple_red">#ffbf5232</color>
+    <color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="material_teal">@color/material_deep_teal_500</color>
+    <color name="ripple_material_teal">#ff149691</color>
+    <color name="blue">#304f9f</color>
+    <color name="material_grey">@color/material_blue_grey_800</color>
+    <color name="light">@color/material_blue_grey_900</color>
+    <color name="colorPrimary">@color/material_deep_teal_500</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+    <color name="colorPrimaryDark">@color/material_deep_teal_500</color>
+    <color name="windowBackgroundColor">#333333</color>
+    <color name="black_translucent">#80000000</color>
+
+</resources>

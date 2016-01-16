@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+      <style name="NoActionBarTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">0dp</item>
+    </style>
+
+    <style name="ActionBar.Solid.MyAppTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@color/grey</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/titlebar_text_size</item>
+    </style>
+
+    <style name="SliderTitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/slider_title_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SplashTitleTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/splash_title_text_size</item>
+    </style>
+
+    <style name="DialogMessageStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="ButtonTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="SettingsTitleTextStyle">
+        <item name="android:textSize">@dimen/settings_title_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ToastTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/toast_text_size</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/probressbar_height</item>
+        <item name="android:progressDrawable">@drawable/custom_progressbar</item>
+    </style>
+ <style name="SmartDrawerTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/smart_drawer_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+</resources>

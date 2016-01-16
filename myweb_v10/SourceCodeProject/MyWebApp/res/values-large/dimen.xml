@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="titlebar_height">60dip</dimen>
+    <dimen name="bottom_navigation_height">60dip</dimen>
+    <dimen name="drawer_width">270dip</dimen>
+    <dimen name="splash_thumbnail_width_height">290dip</dimen>
+    <dimen name="splash_thumbnail_margin">80dip</dimen>
+    <dimen name="setting_item_height">80dip</dimen>
+    <dimen name="menu_icon_width">65dip</dimen>
+    <dimen name="color_view_width_height">35dip</dimen>
+    <dimen name="drawer_padding">15dip</dimen>
+    <dimen name="dialog_width">340dip</dimen>
+    <dimen name="dialog_height">200dip</dimen>
+    <dimen name="probressbar_margin">4dip</dimen>
+    <dimen name="probressbar_height">12dip</dimen>
+    <dimen name="probressbar_stroke_width">0.5dip</dimen>
+    <dimen name="probressbar_round">6dip</dimen>
+    <dimen name="titlebar_text_size">26sp</dimen>
+    <dimen name="slider_title_text_size">22sp</dimen>
+    <dimen name="splash_title_text_size">50sp</dimen>
+    <dimen name="settings_title_text_size">22sp</dimen>
+    <dimen name="toast_text_size">16sp</dimen>
+
+</resources>

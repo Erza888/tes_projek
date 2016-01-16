@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titlebar_height" >
+
+        <RelativeLayout
+            android:id="@+id/back_view"
+            android:layout_width="@dimen/menu_icon_width"
+            android:layout_height="fill_parent"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <ImageView
+                android:id="@+id/back_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_arrow_left" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ok_view"
+            android:layout_width="@dimen/menu_icon_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <ImageView
+                android:id="@+id/show_full_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_tick" />
+        </RelativeLayout>
+
+        <design.website.template.CustomDescriptionTextview
+            android:id="@+id/title"
+            style="@style/TitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contents_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titlebar_layout" >
+
+        <RelativeLayout
+            android:id="@+id/cache_parent_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <RelativeLayout
+                android:id="@+id/cache_child_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_left_right_margin"
+                android:layout_marginRight="@dimen/view_left_right_margin" >
+
+                <ImageView
+                    android:id="@+id/cache_imageview"
+                    android:layout_width="@dimen/color_view_width_height"
+                    android:layout_height="@dimen/color_view_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <design.website.template.CustomDescriptionTextview
+                    android:id="@+id/cache_textView"
+                    style="@style/SettingsTitleTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/cache_imageview"
+                    android:text="@string/cache" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@id/cache_parent_view"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/javascript_parent_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_below="@id/divider_view1"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <RelativeLayout
+                android:id="@+id/javascript_child_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_left_right_margin"
+                android:layout_marginRight="@dimen/view_left_right_margin" >
+
+                <ImageView
+                    android:id="@+id/javascript_imageview"
+                    android:layout_width="@dimen/color_view_width_height"
+                    android:layout_height="@dimen/color_view_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <design.website.template.CustomDescriptionTextview
+                    android:id="@+id/javascript_textView"
+                    style="@style/SettingsTitleTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/javascript_imageview"
+                    android:text="@string/javascript" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@id/javascript_parent_view"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/zoom_control_parent_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_below="@id/divider_view2"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <RelativeLayout
+                android:id="@+id/zoom_control_child_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_left_right_margin"
+                android:layout_marginRight="@dimen/view_left_right_margin" >
+
+                <ImageView
+                    android:id="@+id/zoom_control_imageview"
+                    android:layout_width="@dimen/color_view_width_height"
+                    android:layout_height="@dimen/color_view_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <design.website.template.CustomDescriptionTextview
+                    android:id="@+id/zoom_control_textView"
+                    style="@style/SettingsTitleTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/zoom_control_imageview"
+                    android:text="@string/zoom_control" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider_view3"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_below="@id/zoom_control_parent_view"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/scrollbars_parent_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_below="@id/divider_view3"
+            android:background="@drawable/icons_selector"
+            android:onClick="viewClickHandler" >
+
+            <RelativeLayout
+                android:id="@+id/scrollbars_child_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/view_left_right_margin"
+                android:layout_marginRight="@dimen/view_left_right_margin" >
+
+                <ImageView
+                    android:id="@+id/scrollbars_imageview"
+                    android:layout_width="@dimen/color_view_width_height"
+                    android:layout_height="@dimen/color_view_width_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+                <design.website.template.CustomDescriptionTextview
+                    android:id="@+id/scrollbars_textView"
+                    style="@style/SettingsTitleTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/scrollbars_imageview"
+                    android:text="@string/scrollbars" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_view"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="@dimen/dialog_height"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/view_left_right_margin"
+        android:layout_marginRight="@dimen/view_left_right_margin"
+        android:background="@drawable/dialog_bg"
+        android:paddingBottom="8dip" >
+
+        <RelativeLayout
+            android:id="@+id/title_bar_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/titlebar_height" >
+
+            <design.website.template.CustomDescriptionTextview
+                android:id="@+id/title_textview"
+                style="@style/TitleTextStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contents_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_bar_view"
+            android:paddingLeft="4dip"
+            android:paddingRight="4dip" >
+
+            <LinearLayout
+                android:id="@+id/button_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:weightSum="1" >
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    style="@style/ButtonTextStyle"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/icons_selector"
+                    android:text="@string/no" />
+
+                <ImageView
+                    android:id="@+id/button_divider"
+                    android:layout_width="@dimen/vertical_divider_width"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/header_vertical_divider" />
+
+                <Button
+                    android:id="@+id/ok_button"
+                    style="@style/ButtonTextStyle"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/icons_selector"
+                    android:text="@string/yes" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@id/button_layout" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/view_left_right_margin"
+                    android:paddingRight="@dimen/view_left_right_margin" >
+
+                    <design.website.template.CustomDescriptionTextview
+                        android:id="@+id/message_textview"
+                        style="@style/DialogMessageStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
